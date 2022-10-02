@@ -1,0 +1,127 @@
+@main-green: #68B738;
+@light-grey: #F2F2F2;
+
+@tablet-width: 768px;
+@desktop-width: 1440px;
+
+body {
+  background: white;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+  url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  }
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+  url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.wrapper, .page-main__heading {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+
+}
+
+.fieldset-wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+}
+
+@import "page-header.less";
+
+@import "main-nav.less";
+
+@import "page-main.less";
+
+@import "site-banner.less";
+
+@import "feed-goals.less";
+
+@import "feeding-principles.less";
+
+@import "living-example.less";
+
+@import "example-data.less";
+
+@import "company-info.less";
+
+@import "page-footer.less";
+
+@import "social.less";
+
+@import "copyright.less";
+
+@import "catalog.less";
+
+@import "catalog-item.less";
+
+@import "show-more.less";
+
+@import "extra-goods.less";
+
+@import "extra-item.less";
+
+@import "selection-form.less";
+
+@import "cat-info.less";
+
+@import "goals.less";
+
+@import "owners-contacts.less";
+
+@import "comment.less";
+
+@import "addition.less";
+
+@import "slider.less";

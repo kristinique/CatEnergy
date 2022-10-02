@@ -1,0 +1,134 @@
+.feeding-principles__heading {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+}
+
+.feeding-principles__list {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 37px 94px;
+  }
+}
+
+
+.feeding-principles__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 60px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 280px;
+  }
+}
+
+
+.feeding-principles__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    top: 40px;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .feeding-principles__item::after {
+    position: absolute;
+    display: block;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #F2F2F2;
+    bottom: 13px;
+    right: 0;
+    z-index: -1;
+  }
+
+  .feeding-principles__item:nth-of-type(1)::after {
+    content: "1";
+  }
+
+  .feeding-principles__item:nth-of-type(2)::after {
+    content: "2";
+  }
+
+  .feeding-principles__item:nth-of-type(3)::after {
+    content: "3";
+  }
+
+  .feeding-principles__item:nth-of-type(4)::after {
+    content: "4";
+  }
+}
+
+
+.feeding-principles__item:nth-of-type(1)::before {
+  background-image: url("../img/feeding-principles/icon-leaf.svg");
+  background-repeat: no-repeat;
+}
+
+.feeding-principles__item:nth-of-type(2)::before {
+  background-image: url("../img/feeding-principles/icon-tub.svg");
+  background-repeat: no-repeat;
+}
+
+.feeding-principles__item:nth-of-type(3)::before {
+  background-image: url("../img/feeding-principles/icon-eat.svg");
+  background-repeat: no-repeat;
+}
+
+.feeding-principles__item:nth-of-type(4)::before {
+  background-image: url("../img/feeding-principles/icon-time.svg");
+  background-repeat: no-repeat;
+}
+
+.feeding-principles__text {
+  padding: 0;
+  margin: 0;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin-left: 80px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 151px;
+    margin-left: 0;
+  }
+}
